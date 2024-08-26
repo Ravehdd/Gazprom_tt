@@ -1,0 +1,52 @@
+.headerlogo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-inline: 4rem;
+}
+
+.logo {
+    margin: 0;
+}
+
+.p {
+    color: white;
+    text-decoration: none;
+    margin-inline: 20px;
+}
+
+p {
+    margin-inline: 20px;
+    color: white;
+}
+
+.first {
+    margin-left: 3rem;
+}
+
+.select {
+    font-weight: 600;
+    margin-inline: 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    /* margin-right: 2rem; */
+}
+
+.price {
+    margin: 0;
+    margin-top: 2px;
+    margin-right: 5px;
+}

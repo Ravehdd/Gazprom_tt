@@ -1,0 +1,35 @@
+.footer {
+    position: absolute;
+    margin-inline: 2rem;
+    width: calc(100% - 4rem);
+    bottom: 0;
+}
+
+
+.footercontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footermenu {
+    display: flex;
+    align-items: center;
+
+}
+
+img {
+    /* width: 2rem;
+    height: 2rem; */
+    margin-inline: 1rem;
+}
+
+p {
+    margin-inline: 0;
+}
+
+.arrow {
+    height: 2rem;
+    width: 2rem;
+}

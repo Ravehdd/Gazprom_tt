@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  django:
+    build:
+#      dockerfile: djsite/Dockerfile
+      context: ./dbsite
+    ports:
+      - "8000:8000"
+#    image: downloader
+#    container_name: downloader
+#    environment:
+#      DEBUG: False
+#      POSTGRES_HOST: "db_fc"
+#      POSTGRES_PORT: 5432
+#      POSTGRES_USER: "postgres"
+#      POSTGRES_PASSWORD: "1234"
+#      POSTGRES_DB: "rad_elements"
+    volumes:
+      - static_volume:/code/static
+      - media_volume:/code/media
+  react:
+    build:
+      context: ./Gazprom_tt_react
+#      dockerfile: Dockerfile
+    environment:
+      - HOST=0.0.0.0
+    ports:
+      - "8085:5173"
+
+volumes:
+  static_volume:
+  media_volume:
